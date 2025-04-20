@@ -1,0 +1,71 @@
+.card {
+    width: 60vw;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .card-content {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  nav {
+    background-color: red;
+    padding: 10px;
+  }
+  
+  h1 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  #movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: red;
+    color: white;
+  }
+  
+  #movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .card + .card .card-title {
+    color: red;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+  }
+  
+  .container {
+    margin: 2% 5% 100px 5%;
+  }
+  
