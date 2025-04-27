@@ -1,0 +1,57 @@
+/* Apply default font-size to HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Set paragraph font weight */
+p {
+    font-weight: 400;
+}
+
+/* Set font weight for h1 and h2 */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Set font weight for h2 */
+h2 {
+    font-weight: 500;
+    padding-top: 15px;
+    text-align: left;
+}
+
+/* Apply line-height to paragraphs */
+p {
+    line-height: 1.4em;
+}
+
+.intro {
+    text-indent: 2em;
+}
+
+/* Styling for 'sentence' class applied inside paragraphs */
+.sentence {
+    font-style: italic;
+}
+
+address {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #D6A800;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080; /* purple */
+}

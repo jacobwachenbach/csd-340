@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jacob Achenbach">
+    <link rel="stylesheet" href="Achenbach_Mod9_3.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // JavaScript variables for replacing underscores
+        var firstVariableValue = "Infinity";
+        var secondVariableValue = "Thanos";
+        var thirdVariableValue = "Avengers";
+        var fourthVariableValue = "Snap";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <!-- Introduction paragraph -->
+        <p class="intro">"We have to stand together. The fate of the universe depends on this. This is our final battle against <span id="Infinity">_________</span>, a battle unlike any other in history."</p>
+
+        <p>As the <span id="Thanos">_________</span> approaches, we must be prepared for the worst. Only the <span id="Avengers">_________</span> can stop him, but it will take everything we've got. The hardest part is yet to come—one final <span id="Snap">_________</span> to change everything."</p>
+
+        <!-- Buttons to replace the underscores -->
+        <p>
+            <button type="button" onclick="document.getElementById('Infinity').innerHTML = firstVariableValue">Infinity</button><br/>
+            <button type="button" onclick="document.getElementById('Thanos').innerHTML = secondVariableValue">Thanos</button><br/>
+            <button type="button" onclick="document.getElementById('Avengers').innerHTML = thirdVariableValue">Avengers</button><br/>
+            <button type="button" onclick="document.getElementById('Snap').innerHTML = fourthVariableValue">Snap</button><br/>
+        </p>
+
+        <hr/>
+
+        <!-- Address Section -->
+        <address>
+            <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+
+    <footer>
+        <p><a href="../index.html">Back to Portal Page</a></p>
+    </footer>
+
+</body>
+</html>
