@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <p>Click on the image to see the effect.</p>
+
+    <img id="caveImage" src="images/cave_01.jpg" alt="Cave Image" width="400" onclick="changeImage()">
+
+    <div id="result"></div>
+
+    <script>
+        // JavaScript function to change the image when clicked
+        function changeImage() {
+            var img = document.getElementById("caveImage");
+            var result = document.getElementById("result");
+
+            img.src = "images/cave_02.jpg";
+            result.innerHTML = "<p>The image has been changed!</p>";
+        }
+    </script>
+</body>
+</html>
