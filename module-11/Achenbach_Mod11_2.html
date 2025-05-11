@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <!-- Textbox for input -->
+    <input type="text" id="itemInput" placeholder="Enter a task">
+
+    <!-- Buttons -->
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <!-- Display area -->
+    <div id="itemList"></div>
+
+    <script>
+        // Initialize an empty array
+        let items = [];
+
+        // Function to add item to the array
+        function addItem() {
+            let item = document.getElementById("itemInput").value;
+
+            if (item !== "") {
+                // Add the item to the array
+                items.push(item);
+
+                // Show an alert
+                alert("Item added: " + item);
+
+                // Clear the text box
+                document.getElementById("itemInput").value = "";
+            } else {
+                alert("Please enter a valid item.");
+            }
+        }
+
+        // Delete the last item from the array
+        function deleteLastItem() {
+            if (items.length > 0) {
+                let deletedItem = items.pop(); // Remove last item from the array
+                alert("Item deleted: " + deletedItem);
+            } else {
+                alert("No items to delete.");
+            }
+        }
+
+        // Display all items in the array
+        function displayItems() {
+            let itemList = document.getElementById("itemList");
+            itemList.innerHTML = ""; // Clear the display
+
+            if (items.length > 0) {
+                let listHTML = "<ul>";
+                for (let i = 0; i < items.length; i++) {
+                    listHTML += "<li>" + items[i] + "</li>";
+                }
+                listHTML += "</ul>";
+                itemList.innerHTML = listHTML;
+            } else {
+                itemList.innerHTML = "No items to display.";
+            }
+        }
+    </script>
+
+    <footer>
+        <p><a href="../index.html">Back to Portal Page</a></p>
+    </footer>
+</body>
+</html>
