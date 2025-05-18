@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Achenbach_Mod3_3.css">
+    <script>
+        // My top 10 famous books
+        const books = [
+            "Harry Potter and the Sorcerer's Stone",
+            "The Hunger Games",
+            "Divergent",
+            "The Great Gatsby",
+            "To Kill a Mockingbird",
+            "1984",
+            "The Lord of the Rings",
+            "Pride and Prejudice",
+            "The Catcher in the Rye",
+            "The Chronicles of Narnia"
+        ];
+
+        // Display books in ascending order
+        function topToBottom() {
+            const sortedBooks = [...books].sort();
+            displayBooks(sortedBooks);
+        }
+
+        // Display books in descending order
+        function bottomToTop() {
+            const sortedBooks = [...books].reverse();
+            displayBooks(sortedBooks);
+        }
+
+        // Display books in the list
+        function displayBooks(booksArray) {
+            const bookList = document.getElementById('book-list');
+            bookList.innerHTML = '';  // Clear list
+            booksArray.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        
+        <div class="side-by-side">
+            <div class="left-div">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="book-list">
+                    <li>Harry Potter and the Sorcerer's Stone</li>
+                    <li>The Hunger Games</li>
+                    <li>Divergent</li>
+                    <li>The Great Gatsby</li>
+                    <li>To Kill a Mockingbird</li>
+                    <li>1984</li>
+                    <li>The Lord of the Rings</li>
+                    <li>Pride and Prejudice</li>
+                    <li>The Catcher in the Rye</li>
+                    <li>The Chronicles of Narnia</li>
+                </ol>
+                <button onclick="topToBottom()">Top to Bottom</button>
+                <button onclick="bottomToTop()">Bottom to Top</button>
+            </div>
+
+            <div class="right-div">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>HTML Structure and Elements</li>
+                    <li>CSS Styling</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript Basics</li>
+                    <li>DOM Manipulation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="last-div">
+            <a href="../index.html">Back to Portal Page</a>
+        </div>
+    </div>
+</body>
+</html>
